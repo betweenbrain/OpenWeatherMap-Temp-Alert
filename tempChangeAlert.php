@@ -16,6 +16,10 @@ if (PHP_SAPI !== 'cli')
 $helper = new Helper;
 $helper->checkTemps();
 
+// Display only fatal errors
+error_reporting(1);
+error_reporting(E_ERROR);
+
 /**
  * Class helper
  */
